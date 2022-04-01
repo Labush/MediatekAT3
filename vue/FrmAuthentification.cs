@@ -31,7 +31,7 @@ namespace Mediatek86.vue
             {
                 if (leService.Libelle == "culture")
                 {
-                    MessageBox.Show("L'accès à l'application ne vous est pas autorisée.");
+                    MessageBox.Show("L'accès à l'application ne vous est pas autorisé.");
                     textBox1.Clear();
                     textBox2.Clear();
                 }
