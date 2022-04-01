@@ -1,5 +1,6 @@
 ﻿using Mediatek86.controleur;
 using Mediatek86.metier;
+using Mediatek86.vue;
 using System;
 using System.Windows.Forms;
 
