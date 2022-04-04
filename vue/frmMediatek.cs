@@ -35,28 +35,19 @@ namespace Mediatek86.vue
         {
             InitializeComponent();
             this.controle = controle;
-            if (controle.leService.Libelle == "prêt")
-            {
-                // btnCmdRevuesAnnuler.BackColor = Color.Red;
-                btnLivreEnregistrer.Visible = false;
-                btnLivreAnnuler.Visible = false;
 
-                btnDVDAnnuler.Visible = false;
-                btnDVDEnregistrer.Visible = false;
+        if (controle.leService.Libelle == "prêt")
+        {
+            grpGestionRevues.Visible = false;
+            grpGestionLivres.Visible = false;
+            grpGestionDVD.Visible = false;
+            grpReceptionExemplaire.Visible = false;
 
-                btnRevueEntregistrer.Visible = false;
-                btnRevueAnnuler.Visible = false;
-
-                grpLivresGestion.Visible = false;
-                grpDVDGestion.Visible = false;
-                grpRevuesGestion.Visible = false;
-                grpReceptionExemplaire.Visible = false;
-
-                tabOngletsApplication.TabPages.Remove(tabPage1);
-                tabOngletsApplication.TabPages.Remove(tabPage2);
-                tabOngletsApplication.TabPages.Remove(tabPage3);
-
-            }
+            tabOngletsApplication.TabPages.Remove(tabPage1);
+            tabOngletsApplication.TabPages.Remove(tabPage2);
+            tabOngletsApplication.TabPages.Remove(tabPage3);
+        }
+            
         }
 
 
